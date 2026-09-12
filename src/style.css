@@ -267,3 +267,288 @@ body {
 .empty-state p {
   font-size: 14px;
 }
+
+/* Header with back button */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header .back-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+/* Landing page */
+.landing {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.search-bar {
+  padding: 12px 16px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background: #f8f8f8;
+}
+
+.search-bar input:focus {
+  border-color: #667eea;
+  background: #fff;
+}
+
+.city-bar {
+  display: flex;
+  gap: 8px;
+  padding: 10px 16px;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.city-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.city-btn {
+  flex-shrink: 0;
+  padding: 4px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  background: #fff;
+  color: #666;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.city-btn.active {
+  background: #667eea;
+  color: #fff;
+  border-color: #667eea;
+}
+
+.announcement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #fffbe6;
+  border-bottom: 1px solid #fff1b8;
+}
+
+.announce-icon {
+  font-size: 16px;
+}
+
+.announce-scroll {
+  flex: 1;
+  overflow: hidden;
+}
+
+.announce-text {
+  font-size: 12px;
+  color: #8c6e00;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.grid-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 20px 16px;
+  background: #fff;
+  margin-bottom: 8px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 8px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.grid-item:active {
+  transform: scale(0.95);
+  background: #eef0f2;
+}
+
+.grid-icon {
+  font-size: 32px;
+}
+
+.grid-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #333;
+}
+
+.section {
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.more-link {
+  font-size: 13px;
+  color: #667eea;
+  text-decoration: none;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s;
+}
+
+.info-item:active {
+  background: #eef0f2;
+}
+
+.info-item.coming-soon {
+  justify-content: center;
+  color: #999;
+}
+
+.info-title {
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.info-tag {
+  font-size: 12px;
+  color: #999;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+/* Bottom navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+  border-top: 1px solid #f0f0f0;
+  padding: 8px 0;
+  padding-bottom: env(safe-area-inset-bottom, 8px);
+  z-index: 100;
+}
+
+.nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: #999;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.nav-item.active {
+  color: #667eea;
+}
+
+.nav-item.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nav-icon {
+  font-size: 22px;
+}
+
+/* Coming soon page */
+.coming-soon-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.coming-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.coming-soon-page h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.coming-soon-page p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.coming-soon-page p.small {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Add padding for bottom nav on landing page */
+.landing {
+  padding-bottom: 70px;
+}
