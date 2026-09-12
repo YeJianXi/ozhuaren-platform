@@ -477,16 +477,16 @@ body {
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   max-width: 750px;
-  margin: 0 auto;
   display: flex;
   background: #fff;
   border-top: 1px solid #f0f0f0;
   padding: 8px 0;
-  padding-bottom: env(safe-area-inset-bottom, 8px);
-  z-index: 100;
+  padding-bottom: 8px;
+  z-index: 200;
 }
 
 .nav-item {
@@ -508,7 +508,6 @@ body {
 
 .nav-item.disabled {
   opacity: 0.5;
-  cursor: not-allowed;
 }
 
 .nav-icon {
