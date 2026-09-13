@@ -6,6 +6,24 @@
     </div>
 
     <div v-if="item" class="detail-content">
+      <div class="detail-card" v-if="item.images && item.images.length">
+        <div class="gallery">
+          <img :src="item.images[currentImage]" class="gallery-img" @click="nextImage" />
+          <div class="gallery-dots" v-if="item.images.length > 1">
+            <span v-for="(img, i) in item.images" :key="i" class="dot" :class="{ active: i === currentImage }" @click.stop="currentImage = i"></span>
+          </div>
+          <div class="gallery-counter">{{ currentImage + 1 }}/{{ item.images.length }}</div>
+        </div>
+      </div>
+
+      <div class="detail-card" v-if="item.video">
+        <h3>车辆视频</h3>
+        <video controls class="video-player">
+          <source :src="item.video" type="video/mp4" />
+          您的浏览器不支持视频播放
+        </video>
+      </div>
+
       <div class="detail-card">
         <div class="detail-title">{{ item.title }}</div>
         <div class="price-highlight">{{ item.price }}</div>
@@ -43,6 +61,12 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const item = ref(null)
+const currentImage = ref(0)
+
+const nextImage = () => {
+  if (!item.value?.images?.length) return
+  currentImage.value = (currentImage.value + 1) % item.value.images.length
+}
 
 onMounted(async () => {
   const res = await fetch('./cars.json')

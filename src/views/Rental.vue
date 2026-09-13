@@ -23,15 +23,20 @@
         <p>暂无房源</p>
       </div>
 
-      <router-link v-for="item in filtered" :key="item.id" :to="`/rental/${item.id}`" class="card">
-        <div class="card-title">{{ item.title }}</div>
-        <div class="card-meta">
-          <span class="tag tag-type">{{ item.type }}</span>
-          <span class="tag tag-region">📍 {{ item.region }}</span>
-        </div>
-        <div class="price-row">
-          <span class="price">{{ item.price }}</span>
-          <span class="date">{{ item.available }}</span>
+      <router-link v-for="item in filtered" :key="item.id" :to="`/rental/${item.id}`" class="card trade-card">
+        <div class="card-with-image">
+          <img v-if="item.images && item.images[0]" :src="item.images[0]" class="card-thumb" />
+          <div class="card-content">
+            <div class="card-title">{{ item.title }}</div>
+            <div class="card-meta">
+              <span class="tag tag-type">{{ item.type }}</span>
+              <span class="tag tag-region">📍 {{ item.region }}</span>
+            </div>
+            <div class="price-row">
+              <span class="price">{{ item.price }}</span>
+              <span class="date">{{ item.available }}</span>
+            </div>
+          </div>
         </div>
       </router-link>
     </div>

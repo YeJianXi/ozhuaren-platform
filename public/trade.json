@@ -10,7 +10,8 @@
     "contact": "Mia",
     "wechat": "qfh16888888888",
     "publish_date": "2026-09-10",
-    "images": []
+    "images": ["https://picsum.photos/seed/t1a/400/300", "https://picsum.photos/seed/t1b/400/300"],
+    "video": ""
   },
   {
     "id": "t2",
@@ -23,7 +24,8 @@
     "contact": "Mia",
     "wechat": "qfh16888888888",
     "publish_date": "2026-09-09",
-    "images": []
+    "images": ["https://picsum.photos/seed/t2a/400/300", "https://picsum.photos/seed/t2b/400/300"],
+    "video": ""
   },
   {
     "id": "t3",
@@ -36,7 +38,8 @@
     "contact": "Mia",
     "wechat": "qfh16888888888",
     "publish_date": "2026-09-08",
-    "images": []
+    "images": ["https://picsum.photos/seed/t3a/400/300"],
+    "video": ""
   },
   {
     "id": "t4",
@@ -49,11 +52,12 @@
     "contact": "Mia",
     "wechat": "qfh16888888888",
     "publish_date": "2026-09-07",
-    "images": []
+    "images": ["https://picsum.photos/seed/t4a/400/300", "https://picsum.photos/seed/t4b/400/300"],
+    "video": ""
   },
   {
     "id": "t5",
-    "title": "二手车自行车 Giant ATX",
+    "title": "二手自行车 Giant ATX",
     "category": "运动",
     "price": "$180",
     "region": "墨尔本",
@@ -62,7 +66,8 @@
     "contact": "Mia",
     "wechat": "qfh16888888888",
     "publish_date": "2026-09-06",
-    "images": []
+    "images": ["https://picsum.photos/seed/t5a/400/300"],
+    "video": ""
   },
   {
     "id": "t6",
@@ -75,7 +80,8 @@
     "contact": "Mia",
     "wechat": "qfh16888888888",
     "publish_date": "2026-09-05",
-    "images": []
+    "images": ["https://picsum.photos/seed/t6a/400/300", "https://picsum.photos/seed/t6b/400/300"],
+    "video": ""
   },
   {
     "id": "t7",
@@ -88,6 +94,7 @@
     "contact": "Mia",
     "wechat": "qfh16888888888",
     "publish_date": "2026-09-04",
-    "images": []
+    "images": ["https://picsum.photos/seed/t7a/400/300", "https://picsum.photos/seed/t7b/400/300"],
+    "video": ""
   }
 ]

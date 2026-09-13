@@ -23,15 +23,20 @@
         <p>暂无商品</p>
       </div>
 
-      <router-link v-for="item in filtered" :key="item.id" :to="`/trade/${item.id}`" class="card">
-        <div class="card-title">{{ item.title }}</div>
-        <div class="card-meta">
-          <span class="tag tag-type">{{ item.category }}</span>
-          <span class="tag tag-region">📍 {{ item.region }}</span>
-        </div>
-        <div class="price-row">
-          <span class="price">{{ item.price }}</span>
-          <span class="date">{{ item.publish_date }}</span>
+      <router-link v-for="item in filtered" :key="item.id" :to="`/trade/${item.id}`" class="card trade-card">
+        <div class="card-with-image">
+          <img v-if="item.images && item.images[0]" :src="item.images[0]" class="card-thumb" />
+          <div class="card-content">
+            <div class="card-title">{{ item.title }}</div>
+            <div class="card-meta">
+              <span class="tag tag-type">{{ item.category }}</span>
+              <span class="tag tag-region">📍 {{ item.region }}</span>
+            </div>
+            <div class="price-row">
+              <span class="price">{{ item.price }}</span>
+              <span class="date">{{ item.publish_date }}</span>
+            </div>
+          </div>
         </div>
       </router-link>
     </div>

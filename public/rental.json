@@ -11,7 +11,9 @@
     "available": "即可入住",
     "contact": "Mia",
     "wechat": "qfh16888888888",
-    "publish_date": "2026-09-10"
+    "publish_date": "2026-09-10",
+    "images": ["https://picsum.photos/seed/r1a/400/300", "https://picsum.photos/seed/r1b/400/300", "https://picsum.photos/seed/r1c/400/300"],
+    "video": ""
   },
   {
     "id": "r2",
@@ -25,7 +27,9 @@
     "available": "9月15日起",
     "contact": "Mia",
     "wechat": "qfh16888888888",
-    "publish_date": "2026-09-09"
+    "publish_date": "2026-09-09",
+    "images": ["https://picsum.photos/seed/r2a/400/300"],
+    "video": ""
   },
   {
     "id": "r3",
@@ -39,7 +43,9 @@
     "available": "即可入住",
     "contact": "Mia",
     "wechat": "qfh16888888888",
-    "publish_date": "2026-09-08"
+    "publish_date": "2026-09-08",
+    "images": ["https://picsum.photos/seed/r3a/400/300", "https://picsum.photos/seed/r3b/400/300"],
+    "video": ""
   },
   {
     "id": "r4",
@@ -53,7 +59,9 @@
     "available": "即可入住",
     "contact": "Mia",
     "wechat": "qfh16888888888",
-    "publish_date": "2026-09-07"
+    "publish_date": "2026-09-07",
+    "images": ["https://picsum.photos/seed/r4a/400/300"],
+    "video": ""
   },
   {
     "id": "r5",
@@ -67,7 +75,9 @@
     "available": "10月1日起",
     "contact": "Mia",
     "wechat": "qfh16888888888",
-    "publish_date": "2026-09-06"
+    "publish_date": "2026-09-06",
+    "images": ["https://picsum.photos/seed/r5a/400/300", "https://picsum.photos/seed/r5b/400/300"],
+    "video": ""
   },
   {
     "id": "r6",
@@ -81,6 +91,8 @@
     "available": "9月20日起",
     "contact": "Mia",
     "wechat": "qfh16888888888",
-    "publish_date": "2026-09-05"
+    "publish_date": "2026-09-05",
+    "images": ["https://picsum.photos/seed/r6a/400/300", "https://picsum.photos/seed/r6b/400/300"],
+    "video": ""
   }
 ]

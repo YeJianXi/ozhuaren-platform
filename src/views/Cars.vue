@@ -23,17 +23,22 @@
         <p>暂无车辆</p>
       </div>
 
-      <router-link v-for="item in filtered" :key="item.id" :to="`/cars/${item.id}`" class="card car-card">
-        <div class="car-title">{{ item.title }}</div>
-        <div class="car-specs">
-          <span class="spec">📅 {{ item.year }}</span>
-          <span class="spec">⚙️ {{ item.transmission }}</span>
-          <span class="spec">⛽ {{ item.fuel }}</span>
-          <span class="spec">🛣️ {{ item.mileage }}</span>
-        </div>
-        <div class="price-row">
-          <span class="price">{{ item.price }}</span>
-          <span class="tag tag-region">📍 {{ item.region }}</span>
+      <router-link v-for="item in filtered" :key="item.id" :to="`/cars/${item.id}`" class="card trade-card">
+        <div class="card-with-image">
+          <img v-if="item.images && item.images[0]" :src="item.images[0]" class="card-thumb" />
+          <div class="card-content">
+            <div class="car-title">{{ item.title }}</div>
+            <div class="car-specs">
+              <span class="spec">📅 {{ item.year }}</span>
+              <span class="spec">⚙️ {{ item.transmission }}</span>
+              <span class="spec">⛽ {{ item.fuel }}</span>
+              <span class="spec">🛣️ {{ item.mileage }}</span>
+            </div>
+            <div class="price-row">
+              <span class="price">{{ item.price }}</span>
+              <span class="tag tag-region">📍 {{ item.region }}</span>
+            </div>
+          </div>
         </div>
       </router-link>
     </div>
