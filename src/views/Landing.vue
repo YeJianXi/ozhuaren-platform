@@ -51,6 +51,19 @@
       </div>
     </div>
 
+    <div class="section" v-if="hotCars.length">
+      <div class="section-header">
+        <h2>🚗 热门汽车</h2>
+        <router-link to="/cars" class="more-link">查看更多 →</router-link>
+      </div>
+      <div class="info-list">
+        <router-link v-for="item in hotCars" :key="item.id" :to="`/cars/${item.id}`" class="info-item">
+          <span class="info-title">{{ item.title }}</span>
+          <span class="info-tag price">{{ item.price }}</span>
+        </router-link>
+      </div>
+    </div>
+
     <div class="section" v-if="hotRentals.length">
       <div class="section-header">
         <h2>🏠 最新租房</h2>
@@ -80,11 +93,13 @@ const searchKeyword = ref('')
 const announcement = '欢迎使用华人信息平台，汇聚澳洲最新招聘、二手、租房信息'
 const jobs = ref([])
 const trades = ref([])
+const cars = ref([])
 const rentals = ref([])
 
 const navItems = [
   { icon: '👷', label: '招聘求职', path: '/jobs' },
   { icon: '🛒', label: '二手交易', path: '/trade' },
+  { icon: '🚗', label: '汽车交易', path: '/cars' },
   { icon: '🏠', label: '租房信息', path: '/rental' },
   { icon: '🔧', label: '生活服务', path: '/services' },
   { icon: '🎉', label: '同城活动', path: '/events' },
@@ -97,6 +112,7 @@ const filterByCity = (list) => {
 
 const hotJobs = computed(() => filterByCity(jobs.value).slice(0, 5))
 const hotTrades = computed(() => filterByCity(trades.value).slice(0, 3))
+const hotCars = computed(() => filterByCity(cars.value).slice(0, 3))
 const hotRentals = computed(() => filterByCity(rentals.value).slice(0, 3))
 
 const doSearch = () => {
@@ -105,13 +121,15 @@ const doSearch = () => {
 }
 
 onMounted(async () => {
-  const [j, t, r] = await Promise.all([
+  const [j, t, c, r] = await Promise.all([
     fetch('./data.json').then(res => res.json()),
     fetch('./trade.json').then(res => res.json()),
+    fetch('./cars.json').then(res => res.json()),
     fetch('./rental.json').then(res => res.json()),
   ])
   jobs.value = j
   trades.value = t
+  cars.value = c
   rentals.value = r
 })
 </script>
