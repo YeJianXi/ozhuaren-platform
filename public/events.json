@@ -1,0 +1,80 @@
+[
+  {
+    "id": "e1",
+    "title": "悉尼华人烧烤聚会",
+    "region": "悉尼",
+    "location": "Centennial Park",
+    "date": "2026-09-20",
+    "time": "下午2点 - 6点",
+    "description": "组织大家BBQ，食材现场AA，约$15/人。欢迎带家属朋友，小朋友也可以一起玩。请自带泳衣和野餐垫。",
+    "host": "Mia",
+    "wechat": "qfh16888888888",
+    "max_participants": 30,
+    "current_participants": 18
+  },
+  {
+    "id": "e2",
+    "title": "墨尔本桌游之夜",
+    "region": "墨尔本",
+    "location": "Box Hill Community Centre",
+    "date": "每周五",
+    "time": "晚上7点 - 10点",
+    "description": "每周五固定活动，玩各种桌游：狼人杀、剧本杀、卡坦岛、UNO等。新手友好，现场教学。",
+    "host": "Mia",
+    "wechat": "qfh16888888888",
+    "max_participants": 20,
+    "current_participants": 12
+  },
+  {
+    "id": "e3",
+    "title": "布里斯班周末徒步",
+    "region": "布里斯班",
+    "location": "Mount Coot-tha",
+    "date": "2026-09-14",
+    "time": "早上8点 - 中午12点",
+    "description": "周日早上一起爬山，路线简单适合新手。山顶可以俯瞰整个布里斯班。结束后一起去喝早茶。",
+    "host": "Mia",
+    "wechat": "qfh16888888888",
+    "max_participants": 15,
+    "current_participants": 8
+  },
+  {
+    "id": "e4",
+    "title": "悉尼中文读书会",
+    "region": "悉尼",
+    "location": "Chatswood Library",
+    "date": "每月第一个周六",
+    "time": "下午2点 - 4点",
+    "description": "一起读中文书，分享读书心得。本月书目：《活着》。带一本你喜欢的书来交换也行。",
+    "host": "Mia",
+    "wechat": "qfh16888888888",
+    "max_participants": 12,
+    "current_participants": 6
+  },
+  {
+    "id": "e5",
+    "title": "墨尔本羽毛球局",
+    "region": "墨尔本",
+    "location": "Glen Waverley Sports Centre",
+    "date": "每周三",
+    "time": "晚上7点 - 9点",
+    "description": "周三晚上固定羽毛球，水平不限，主要是锻炼身体交朋友。场地费AA，约$8/人。",
+    "host": "Mia",
+    "wechat": "qfh16888888888",
+    "max_participants": 16,
+    "current_participants": 10
+  },
+  {
+    "id": "e6",
+    "title": "阿德莱德周末聚餐",
+    "region": "阿德莱德",
+    "location": "Gouger Street 中餐厅",
+    "date": "2026-09-21",
+    "time": "晚上6点 - 9点",
+    "description": "华人朋友聚餐，吃火锅。AA制，约$35/人。认识新朋友，聊聊天。欢迎新来阿德莱德的朋友。",
+    "host": "Mia",
+    "wechat": "qfh16888888888",
+    "max_participants": 20,
+    "current_participants": 14
+  }
+]

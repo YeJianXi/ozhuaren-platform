@@ -1,0 +1,93 @@
+[
+  {
+    "id": "t1",
+    "title": "IKEA 书桌 + 椅子 九成新",
+    "category": "家具",
+    "price": "$50",
+    "region": "悉尼",
+    "location": "Burwood",
+    "description": "搬家转让，IKEA MALM 书桌 + MARKUS 椅子，买来半年，九成新。自取，不议价。",
+    "contact": "Mia",
+    "wechat": "qfh16888888888",
+    "publish_date": "2026-09-10",
+    "images": []
+  },
+  {
+    "id": "t2",
+    "title": "iPhone 14 Pro 256G 暗紫色",
+    "category": "数码",
+    "price": "$800",
+    "region": "墨尔本",
+    "location": "Box Hill",
+    "description": "去年买的，电池健康度92%，无磕碰，带原装充电器和包装盒。因换新机故出。",
+    "contact": "Mia",
+    "wechat": "qfh16888888888",
+    "publish_date": "2026-09-09",
+    "images": []
+  },
+  {
+    "id": "t3",
+    "title": "搬家全套工具 转让",
+    "category": "工具",
+    "price": "$120",
+    "region": "布里斯班",
+    "location": "Sunnybank",
+    "description": "电钻、螺丝刀套装、锤子、扳手等，打包带走。搬家用过一次，基本全新。",
+    "contact": "Mia",
+    "wechat": "qfh16888888888",
+    "publish_date": "2026-09-08",
+    "images": []
+  },
+  {
+    "id": "t4",
+    "title": "全新未拆封 iPad Air M2",
+    "category": "数码",
+    "price": "$650",
+    "region": "悉尼",
+    "location": "Chatswood",
+    "description": "公司抽奖中的，全新未拆封，64GB WiFi版。官网卖$999，现在$650出。",
+    "contact": "Mia",
+    "wechat": "qfh16888888888",
+    "publish_date": "2026-09-07",
+    "images": []
+  },
+  {
+    "id": "t5",
+    "title": "二手车自行车 Giant ATX",
+    "category": "运动",
+    "price": "$180",
+    "region": "墨尔本",
+    "location": "Glen Waverley",
+    "description": "Giant ATX 2 山地自行车，27速，前叉避震，骑了半年，定期保养，车况很好。",
+    "contact": "Mia",
+    "wechat": "qfh16888888888",
+    "publish_date": "2026-09-06",
+    "images": []
+  },
+  {
+    "id": "t6",
+    "title": "IKEA 双人沙发 床",
+    "category": "家具",
+    "price": "$200",
+    "region": "阿德莱德",
+    "location": "Adelaide CBD",
+    "description": "IKEA FRIHETEN 沙发床，可展开成双人床，灰色布艺，带储物空间。使用一年，状态良好。",
+    "contact": "Mia",
+    "wechat": "qfh16888888888",
+    "publish_date": "2026-09-05",
+    "images": []
+  },
+  {
+    "id": "t7",
+    "title": "PS5 光驱版 + 3个游戏",
+    "category": "数码",
+    "price": "$450",
+    "region": "悉尼",
+    "location": "Parramatta",
+    "description": "PS5 光驱版，附送《战神》《蜘蛛侠2》《FIFA24》，手柄全新。因工作忙没时间玩。",
+    "contact": "Mia",
+    "wechat": "qfh16888888888",
+    "publish_date": "2026-09-04",
+    "images": []
+  }
+]
